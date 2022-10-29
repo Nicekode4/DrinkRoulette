@@ -1,3 +1,3 @@
-# vendespil
+# DrinkRoulette
  
-https://fastidious-cupcake-813ba1.netlify.app/
+https://preeminent-sherbet-11754c.netlify.app/
