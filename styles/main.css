@@ -1,5 +1,7 @@
 html {
+  background-image: url("../assets/megapolis-modernas-noche-edificios-que-brillan-intensamente-noria-estilo-dibujos-animados-colores-neon_1441-2079.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   text-align: center;
 }
@@ -8,9 +10,9 @@ html {
   display: grid;
   justify-content: center;
   grid-gap: 5vh;
-  margin-top: 10vh;
   margin-left: 23vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 75%;
 }
 #gameSec article {
@@ -19,11 +21,10 @@ html {
 }
 #gameSec article .front {
   display: block;
-  height: 30vh;
+  height: 20vh;
   background-image: url("../assets/icons8-coctail-64.png");
-  background-color: orange;
-  background-size: 15vh 15vh;
-  background-position: 9vh;
+  background-color: cyan;
+  background-position: 8vh;
   background-repeat: no-repeat;
   border-radius: 50px;
 }
@@ -32,18 +33,21 @@ html {
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
   transform: rotatey(0deg);
-  height: 30vh;
-  background-color: orange;
+  height: 13vh;
+  background-color: cyan;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 7vh;
 }
 #gameSec article .back2 {
   display: block;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
-  height: 30vh;
-  background-color: orange;
+  height: 13vh;
+  background-color: cyan;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -52,11 +56,13 @@ html {
   color: white;
 }
 
-body {
-  font-size: 20px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  text-align: center;
-  background-color: #f8faff;
+#h2Sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#h2Sec h2 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .bubbly-button {
@@ -66,7 +72,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background-color: #F9B700;
+  background-color: rgba(255, 0, 132, 0.575);
   color: black;
   border: none;
   cursor: pointer;
@@ -91,18 +97,18 @@ body {
 .bubbly-button:before {
   display: none;
   top: -75%;
-  background-image: radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, transparent 20%, #F9B700 20%, transparent 30%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, transparent 10%, #F9B700 15%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%);
+  background-image: radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, transparent 20%, rgba(255, 0, 132, 0.575) 20%, transparent 30%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, transparent 10%, rgba(255, 0, 132, 0.575) 15%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 .bubbly-button:after {
   display: none;
   bottom: -75%;
-  background-image: radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, transparent 10%, #F9B700 15%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%), radial-gradient(circle, #F9B700 20%, transparent 20%);
+  background-image: radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, transparent 10%, rgba(255, 0, 132, 0.575) 15%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%), radial-gradient(circle, rgba(255, 0, 132, 0.575) 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #e0a400;
+  background-color: rgba(230, 0, 119, 0.575);
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 .bubbly-button.animate:before {

@@ -1,6 +1,13 @@
-html{
+$fuschia: rgba(255, 0, 132, 0.575);
+$button-bg: $fuschia;
+$button-text-color: black;
+$baby-blue: #f8faff;
 
+
+html{
+  background-image: url('../assets/megapolis-modernas-noche-edificios-que-brillan-intensamente-noria-estilo-dibujos-animados-colores-neon_1441-2079.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   text-align: center;
 }
@@ -8,9 +15,9 @@ html{
    display: grid;
    justify-content: center;
    grid-gap: 5vh;
+   margin-left: 23vh;
 margin-top: 10vh;
-margin-left: 23vh;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    width: 75%;
 
    article{
@@ -18,12 +25,10 @@ padding: 0;
 margin: 0;
    .front{
       display: block;
-      height: 30vh;
-
+      height: 20vh;
       background-image: url('../assets/icons8-coctail-64.png');
-      background-color: orange;
-      background-size: 15vh 15vh;
-      background-position: 9vh;
+      background-color: cyan;
+    background-position: 8vh;
       background-repeat: no-repeat;
       border-radius: 50px;
       
@@ -33,18 +38,24 @@ margin: 0;
       display: none;
       backface-visibility: visible;
       transform: rotatey(0deg);
-      height: 30vh;
-      background-color: orange;
+      height: 13vh;
+      background-color: cyan;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 50px;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 7vh;
+        
+
+  
    }
    .back2{
       display: block;
       backface-visibility: visible;
       
-      height: 30vh;
-      background-color: orange;
+      height: 13vh;
+      background-color: cyan;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 50px;
@@ -53,19 +64,19 @@ margin: 0;
       color: white;
    }
    
+   
 }
 }
-$fuschia: #F9B700;
-$button-bg: $fuschia;
-$button-text-color: black;
-$baby-blue: #f8faff;
+#h2Sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h2{
+      font-size: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+   }
 
-body{
-  font-size: 20px;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  text-align: center;
-  background-color: $baby-blue;
-}
+
 .bubbly-button{
   font-family: 'Helvetica', 'Arial', sans-serif;
   display: inline-block;
