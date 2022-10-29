@@ -24,7 +24,7 @@ let randomNumberArray = []
 let numberOfCards = 15
 let randomValue = Math.round(Math.random() * bads.length)
 let numberOfBads = randomValue
-let baddies = randomNumberArray.length;
+let baddies = numberOfBads / 2 ;
 let dulls = numberOfCards - baddies
 let randomNumber = Math.round(Math.random() * numberOfCards)  
 const dullsH2 = document.querySelector('#dulls')
@@ -65,7 +65,7 @@ function makeBoard() {
         
     }
     dulls = numberOfCards - baddies
-    document.querySelector('#baddies').innerHTML = "Baddies: " + baddies
+    document.querySelector('#baddies').innerHTML = "Baddies: " + "Ca " +  baddies
     document.querySelector('#dulls').innerHTML = "Nitter: " + dulls
     count = 0; 
     flip()
